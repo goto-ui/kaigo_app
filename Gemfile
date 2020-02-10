@@ -13,6 +13,9 @@ gem 'autoprefixer-rails'
 gem 'rails-i18n', '~> 5.1'
 gem 'devise-i18n'
 gem 'devise-i18n-views'
+# Font Qwesomeを導入
+gem "font-awesome-rails"
+gem 'font-awesome-sass'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.1'
 # Use mysql as the database for Active Record
