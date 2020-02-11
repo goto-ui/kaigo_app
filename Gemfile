@@ -3,10 +3,15 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
+#rubocop導入
+gem 'rubocop', require: false
+gem 'rubocop-rails'
+
 gem 'ransack'
 gem 'devise'
 gem 'carrierwave'
 gem 'rmagick'
+# jQuery導入
 gem 'jquery-rails'   
 gem 'bootstrap'
 gem 'autoprefixer-rails'
