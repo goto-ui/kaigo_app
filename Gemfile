@@ -16,6 +16,7 @@ gem 'jquery-rails'
 gem 'bootstrap'
 gem 'autoprefixer-rails'
 gem 'rails-i18n', '~> 5.1'
+#devise日本語化
 gem 'devise-i18n'
 gem 'devise-i18n-views'
 # Font Qwesomeを導入
