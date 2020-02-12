@@ -5,5 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable,
          :confirmable, :lockable, :timeoutable
          
-
+         #アップロードファイルとモデルを紐付ける
+         #mount_uploader :carrierwave用に作ったカラム名, carrierwaveの設定ファイルのクラス名
+         mount_uploader :img, ImageUploader
 end
