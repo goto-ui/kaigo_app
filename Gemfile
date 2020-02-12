@@ -7,10 +7,13 @@ ruby '2.6.3'
 gem 'rubocop', require: false
 gem 'rubocop-rails'
 
+#画像を投稿できるようにする
+gem 'carrierwave'
+#画像をリサイズできるようにする
+gem 'rmagick'
+
 gem 'ransack'
 gem 'devise'
-gem 'carrierwave'
-gem 'rmagick'
 # jQuery導入
 gem 'jquery-rails'   
 gem 'bootstrap'

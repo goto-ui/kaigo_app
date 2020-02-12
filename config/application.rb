@@ -12,6 +12,9 @@ module Kaigo
     config.load_defaults 5.2
     config.i18n.default_locale = :ja
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '*.rb,yml').to_s]
+    
+    #画像をアップロードするときにエラーが出ないようにかく
+    config.autoload_paths += Dir[Rails.root.join('app', 'uploaders')]
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
@@ -28,5 +31,6 @@ module Kaigo
                        request_specs: false
       g.fixture_replacement :factory_bot, dir: "spec/factories"
     end
+  
   end
 end
